@@ -115,6 +115,8 @@ database:
   type: sqlite
   sqlite:
     path: /var/lib/headscale/db.sqlite
+policy:
+  mode: database
 acme_url: https://acme-v02.api.letsencrypt.org/directory
 acme_email: "$ADMIN_EMAIL"
 tls_letsencrypt_cache_dir: /var/lib/headscale/cache
