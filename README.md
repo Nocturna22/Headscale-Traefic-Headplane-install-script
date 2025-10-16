@@ -25,6 +25,7 @@ sudo git clone https://github.com/Nocturna22/Headscale-Traefic-Headplane-install
 ```bash
 cd Headscale-Traefic-Headplane-install-script/
 ```
+# USE AT LEAST A SEMI VALID E-MAIL LIKE admin@DOMAIN.COM
 ```bash
 sudo chmod +x install-headplane.sh
 ```
