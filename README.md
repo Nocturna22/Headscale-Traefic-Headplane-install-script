@@ -12,8 +12,8 @@ Automatically sets up HTTPS (via Let’s Encrypt), generates API keys, configure
 ```bash
 sudo git clone https://github.com/Nocturna22/Headscale-Traefic-Headplane-install-script.git
 cd Headscale-Traefic-Headplane-install-script/
-sudo chmod +x install-headscale.sh
-sudo ./install-headscale.sh
+sudo chmod +x install-headplane.sh
+sudo ./install-headplane.sh
 ```
 
 During installation, you’ll be prompted for:
@@ -26,8 +26,8 @@ The installer will build all configs, start Headscale, Traefik, and Headplane, a
 ### Uninstall
 
 ```bash
-sudo chmod +x uninstall-headscale.sh
-sudo ./uninstall-headscale.sh
+sudo chmod +x uninstall-headplane.sh
+sudo ./uninstall-headplane.sh
 ```
 
 This script will stop containers, remove volumes, delete configs/data, and optionally prune unused Docker resources.
