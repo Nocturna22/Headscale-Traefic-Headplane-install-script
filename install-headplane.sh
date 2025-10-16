@@ -10,7 +10,16 @@ fi
 read -p "Enter your full domain (e.g., headscale.example.com): " FULL_DOMAIN
 
 # Prompt for admin email (used by Let's Encrypt)
+echo ""
+echo "⚠️  Important: Use the correct Syntax — Let's Encrypt will refuse invalid emails."
+echo "Example: admin@example.com"
 read -p "Enter your email address for Let's Encrypt: " ADMIN_EMAIL
+
+# Prompt for timezone
+echo ""
+echo "🌍 Set your timezone (default: Europe/Berlin)"
+read -p "Enter your timezone (e.g., Europe/Berlin): " TIMEZONE
+TIMEZONE=${TIMEZONE:-Europe/Berlin}
 
 # Create the directory structure
 mkdir -p headscale/data headscale/configs/headscale headscale/configs/headplane headscale/letsencrypt
@@ -27,7 +36,7 @@ services:
       - './data:/var/lib/headscale'
       - './configs/headscale:/etc/headscale'
     environment:
-      TZ: 'Europe/Berlin'
+      TZ: '$TIMEZONE'
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.headscale.rule=Host(\`$FULL_DOMAIN\`)"
@@ -184,5 +193,3 @@ echo "$API_KEY"
 echo ""
 echo "Open https://$FULL_DOMAIN/admin and paste it there. 🤌"
 echo "--------------------------------------------------"
-
-
