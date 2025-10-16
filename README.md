@@ -16,15 +16,16 @@ sudo ./install-headscale.sh
 
 During installation, you’ll be prompted for:
 
-    Domain (e.g., headscale.example.com)
-
-    Email (for Let’s Encrypt SSL)
+> Domain (e.g., headscale.example.com)
+> Email (for Let’s Encrypt SSL)
 
 The installer will build all configs, start Headscale, Traefik, and Headplane, and display your API key at the end.
 Uninstall
 
+```bash
 sudo chmod +x uninstall-headscale.sh
 sudo ./uninstall-headscale.sh
+```
 
 This script will stop containers, remove volumes, delete configs/data, and optionally prune unused Docker resources.
 🌐 Access
