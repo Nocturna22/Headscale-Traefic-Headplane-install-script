@@ -5,6 +5,16 @@ Automatically sets up HTTPS (via Let’s Encrypt), generates API keys, configure
 
 ---
 
+I used this script and changed the UI:
+https://wiki.serversatho.me/en/headscale
+
+# Prerequisites
+
+    A Linux system with root access and a public IP address (we recommend Ubuntu or Debian based systems)
+    Docker installed on the server
+    A domain name pointed to your server’s IP address
+    TCP ports 80 and 443 open
+
 ## 🚀 Quickstart
 
 ### Install
