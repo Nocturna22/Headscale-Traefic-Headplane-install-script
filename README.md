@@ -16,8 +16,10 @@ https://wiki.serversatho.me/en/headscale
     TCP ports 80 and 443 open
 
 ## 🚀 Quickstart
-
+## USE AT LEAST A SEMI VALID E-MAIL LIKE admin@DOMAIN.COM
+to avoid Letsencrypt blocking you from assigning a cert
 ### Install
+
 
 ```bash
 sudo git clone https://github.com/Nocturna22/Headscale-Traefic-Headplane-install-script.git
@@ -25,8 +27,6 @@ sudo git clone https://github.com/Nocturna22/Headscale-Traefic-Headplane-install
 ```bash
 cd Headscale-Traefic-Headplane-install-script/
 ```
-## USE AT LEAST A SEMI VALID E-MAIL LIKE admin@DOMAIN.COM
-to avoid Letsencrypt blocking you from assigning a cert
 ```bash
 sudo chmod +x install-headplane.sh
 ```
