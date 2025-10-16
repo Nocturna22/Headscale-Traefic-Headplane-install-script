@@ -21,8 +21,14 @@ https://wiki.serversatho.me/en/headscale
 
 ```bash
 sudo git clone https://github.com/Nocturna22/Headscale-Traefic-Headplane-install-script.git
+```
+```bash
 cd Headscale-Traefic-Headplane-install-script/
+```
+```bash
 sudo chmod +x install-headplane.sh
+```
+```bash
 sudo ./install-headplane.sh
 ```
 
@@ -37,6 +43,8 @@ The installer will build all configs, start Headscale, Traefik, and Headplane, a
 
 ```bash
 sudo chmod +x uninstall-headplane.sh
+```
+```bash
 sudo ./uninstall-headplane.sh
 ```
 
